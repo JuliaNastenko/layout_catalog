@@ -13,13 +13,12 @@
   width: 160px;
   height: 134px;
   margin: 0 5px 45px;
-  outline: 3px solid transparent;
-  box-sizing: content-box;
-  transition: 1s;
+  transition: transform 1s;
 }
 
 .card__image:hover {
-  outline-color: $border-color;
+  outline: 3px solid $border-color;
+  box-sizing: content-box;
   transform: scale(1.2);
   margin-top: -15px;
   padding-top: 15px;
