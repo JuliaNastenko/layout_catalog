@@ -3,8 +3,10 @@ $text_size_normal: 11px;
 $line_height_normal: 13px;
 $font-size-h1: 12px;
 $card_width: 200px;
-$card_margin: 48px;
+$card_feight: 403px;
 $border-color: #f3f3f3;
+$column-gap: 48px;
+$row-gap: 50px;
 
 @import "header";
 @import "card";
@@ -16,17 +18,11 @@ body {
 }
 
 .main {
-  display: flex;
+  display: grid;
   justify-content: center;
-  flex-wrap: wrap;
-}
-
-.main-row {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin: 0 auto;
-  max-width: 4*$card_width + 4*$card_margin;
+  grid-template-columns: repeat(4, $card_width);
+  grid-column-gap: $column-gap;
+  grid-row-gap: $row-gap;
 }
 
 * {
