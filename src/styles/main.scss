@@ -11,18 +11,11 @@ $row-gap: 50px;
 @import "header";
 @import "card";
 @import "stars";
+@import "grid-container";
 
 body {
   margin: 0;
   font-family: "Roboto", sans-serif;
-}
-
-.main {
-  display: grid;
-  justify-content: center;
-  grid-template-columns: repeat(4, $card_width);
-  grid-column-gap: $column-gap;
-  grid-row-gap: $row-gap;
 }
 
 * {

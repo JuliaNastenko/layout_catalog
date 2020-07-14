@@ -1,0 +1,7 @@
+.main {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(4, $card_width);
+  grid-column-gap: $column-gap;
+  grid-row-gap: $row-gap;
+}
